@@ -26,13 +26,13 @@ I still miss the ability to drop one line of code and start debugging. I wondere
 
 # Getting started
 
-Bugbuzz is pretty easy to use, all you need to do is install the library package
+Bugbuzz is pretty easy to use, all you need to do is to install the library package
 
 ```bash
 pip install bugbuzz
 ```
 
-then drop a line in the python file you like to debug
+then drop a line in the python file you want to debug
 
 ```
 import bugbuzz; bugbuzz.set_trace()
@@ -61,14 +61,14 @@ then run it
 python example.py
 ```
 
-and here you go, it should opens the debugger page on browser for you. If you are debuggin on a server, it might not be able to open the URL for you, as it will display the URL in stderr like this
+and here you go, it should opens the debugger page in browser for you. If you are debugging on a server, it might not be able to open the URL for you, however, as it will display the URL in stderr like this
 
 ```
 Access Key: <ACCESS KEY>
 Dashboard URL: http://dashboard.bugbuzz.io/#/sessions/SEY76Jq2hxgPFPNeA9BLmqqV?access_key=<ACCESS KEY>
 ```
 
-You can copy it and paste on your browser.
+You can copy the URL and paste on your browser.
 
 # Shortcuts
 
@@ -79,7 +79,7 @@ If you are familiar with VIM shortcuts, then it won't be too difficult for you t
  - J Next
  - L Step
 
-As you can think it's like browsing code, J is down, so it's next line, and L is right, so you are step into a funtion call. H is left, so you are leaving a function call, so that would be run until return a function.
+As you can think it's like browsing code, J is down, so it's next line, and L is right, so you are step into a funtion call. H is left, so you are leaving a function call, so that would be run until returning current function call.
 
 # Security concern
 
