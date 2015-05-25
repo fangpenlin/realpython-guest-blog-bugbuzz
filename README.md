@@ -72,7 +72,14 @@ You can copy it and paste on your browser.
 
 # Shortcuts
 
+If you are familiar with VIM shortcuts, then it won't be too difficult for you to pick up Bugbuzz shortcuts.
 
+ - C Continue
+ - H Return
+ - J Next
+ - L Step
+
+As you can think it's like browsing code, J is down, so it's next line, and L is right, so you are step into a funtion call. H is left, so you are leaving a function call, so that would be run until return a function.
 
 # Security concern
 
