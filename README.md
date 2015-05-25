@@ -91,5 +91,5 @@ There is an open source project pretty similar to Bugbuzz, it's [wdb](https://gi
 
 # The future
 
-As a prototype, Bugbuzz can only do very basic things now, yet it shows a very promising start. Hopefully, I can grow it as my pet project graduately when I have time. Feel free to know me know if you have any throught about it. In the future, it can be way more powerful but yet very handy to use. 😎
+As a prototype, Bugbuzz can only do very basic things now, yet it shows a very promising start. Hopefully, I can grow it as my pet project graduately when I have time. Feel free to let me know if you have any throught about it. In the future, it can be way more powerful but yet very handy to use. 😎
 
