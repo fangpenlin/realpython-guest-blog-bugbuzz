@@ -22,9 +22,44 @@ There are actually more advance tools, like [Pydev](http://pydev.org), it's an I
  - You need to add a project to use it
  - It's hard to do remote debugging, e.g. in a vagrant environment or remote server
 
-I still miss the ability drop one line of code and start debugging. I wondered, well, we are in cloud and big data era, why not make the debugger as a software-as-service? In my dream, I want is to drop a new line, then open the debugger with fancy UI in the browser. I can read the complete source code, click around to see what's going on here. With the idea in my mind, then I spent some time created this pet project called Bugbuzz.
+I still miss the ability drop one line of code and start debugging. I wondered, well, we are in cloud and big data era, why not make the debugger as a software-as-service? In my dream, I want is to drop a new line, then open the debugger with fancy UI in the browser. I can read the complete source code, click around to see what's going on here. With the idea in my mind, so I spent some time created this pet project called Bugbuzz.
 
 # Getting started
+
+Bugbuzz is pretty easy to use, all you need to do is install the library package
+
+```bash
+pip install bugbuzz
+```
+
+then drop a line in the python file you like to debug
+
+```
+import bugbuzz; bugbuzz.set_trace()
+```
+
+for example, you have a simple python script like this
+
+example.py
+```python
+for i in range(10):
+    print i
+```
+
+to debug it, you can drop it at the first line
+
+example.py
+```python
+import bugbuzz; bugbuzz.set_trace()
+for i in range(10):
+    print i
+```
+
+then run it
+
+```
+python example.py
+```
 
 # Shortcuts
 
