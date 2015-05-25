@@ -14,7 +14,7 @@ Well, actually there is something better - [ipdb](https://pypi.python.org/pypi/i
 
 ![Another debugger - ipdb](https://cloud.githubusercontent.com/assets/201615/7791008/8406135a-024c-11e5-91be-75673ad5c543.png)
 
-It's basically enhanced pdb, you have auto-complete, syntax highlight and mutiple lines displaying. But still, the way it works is still like pdb. You need to ask for trivials things while you debug.
+It's basically enhanced pdb, you have auto-complete, syntax highlight and mutiple lines displaying. But still, the way it works is still like pdb. You need to ask for trivial things while you debug.
 
 There are actually more advance tools, like [Pydev](http://pydev.org), it's an IDE for Python based on Eclipse. Other similar IDEs can also provide better debugging experience. Although it's better experience, I still don't like IDE debugger for some reasons
 
