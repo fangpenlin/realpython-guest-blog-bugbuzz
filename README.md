@@ -40,7 +40,7 @@ import bugbuzz; bugbuzz.set_trace()
 
 for example, you have a simple python script like this
 
-example.py
+example.py:
 ```python
 for i in range(10):
     print i
@@ -48,7 +48,7 @@ for i in range(10):
 
 to debug it, you can drop it at the first line
 
-example.py
+example.py:
 ```python
 import bugbuzz; bugbuzz.set_trace()
 for i in range(10):
@@ -60,6 +60,8 @@ then run it
 ```
 python example.py
 ```
+
+and here you go, it should opens the debugger page on browser for you.
 
 # Shortcuts
 
