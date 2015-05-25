@@ -22,7 +22,7 @@ There are actually more advance tools, like [Pydev](http://pydev.org), it's an I
  - You need to create a project to use it
  - It's hard to do remote debugging, e.g. in a vagrant environment or remote server
 
-I still miss the ability to drop one line of code and start debugging. I wondered, well, we are in cloud and big data era, why not make the debugger as a software-as-service? In my dream, I want is to drop a new line, then open the debugger with fancy UI in the browser. I can read the complete source code, click around to see what's going on here. With the idea in my mind, so I spent some time created this pet project called Bugbuzz.
+I still miss the ability to drop one line of code and start debugging. I wondered, well, we are in the cloud and big data era, why not make the debugger as a software-as-service? In my dream, I want is to drop a one line, then open the debugger with fancy UI in the browser. I can read the complete source code, click around to see what's going on here. With the idea in my mind, so I spent some time created this pet project called Bugbuzz.
 
 # Getting started
 
