@@ -1,4 +1,4 @@
-Bugbuzz is a web-based debugger. The idea behind it is trying to provide an very easy-to-use debugging experience. Currently it supports Python only. With Bugbuzz, you only need to install the debugging library - [bugbuzz-python](https://github.com/victorlin/bugbuzz-python), drop one line in your code, then you can start debugging, no need to setup anything else. The UI is very friendly, no need to memorize commands, you can click buttons to trace through the code, or if you are familiar with VIM, you can also use shortcuts to debug like a pro.
+Bugbuzz is a web-based debugger. The idea behind it is trying to provide an very easy-to-use debugging experience. Currently it supports Python only. With Bugbuzz, you only need to install the debugging library - [bugbuzz-python](https://github.com/victorlin/bugbuzz-python), drop one line in your code, then you can start debugging, no need to setup anything else. The UI is very friendly, no need to memorize commands, you can click buttons to trace through the code, or if you are familiar with VIM, you can also use shortcuts to debug like a pro. The best part of it is, as it's in the cloud, you can share the debugging session link with your co-worker, you can debug together, or explain to them how the program works.
 
 ![Bugbuzz screenshot](https://cloud.githubusercontent.com/assets/201615/7791039/504bf5ba-024d-11e5-9f19-ec865b1e5b36.png)
 
@@ -91,5 +91,5 @@ There is an open source project pretty similar to Bugbuzz, it's [wdb](https://gi
 
 # The future
 
-As a prototype, Bugbuzz can only do very basic things now, yet it shows a very promising start, with it, you can debug your code on the server, you can even send the link to your co-worker, debug together, or explain to them how the program works. Hopefully, I can grow it as my pet project graduately when I have time. In the future, it can be way more powerful but yet very handy to use. 😎
+As a prototype, Bugbuzz can only do very basic things now, yet it shows a very promising start. Hopefully, I can grow it as my pet project graduately when I have time. Feel free to know me know if you have any throught about it. In the future, it can be way more powerful but yet very handy to use. 😎
 
