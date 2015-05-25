@@ -2,6 +2,12 @@ Bugbuzz is a web-based debugger. The idea behind it is trying to provide an very
 
 # Why yet another debugger
 
+The reason I am creating yet another debugger is, I felt most of debugging tools out there are really hard to use. The most common Python debugger people use is the one build-in with Python - [pdb](https://docs.python.org/2/library/pdb.html).
+
+![Python build-in debugger - PDB screenshot](https://cloud.githubusercontent.com/assets/201615/7790924/8b0dabe2-024a-11e5-86e4-ae46a07699bb.png)
+
+It works, but I bet most of developers feel painful to use it. For me, I really hate to see only one line of code every single step. When you walk through the code, you don't know what's next line, where am I. You need to constantly type commands to know where you are, rather than focus on the problem you're solving. 
+
 # Getting started
 
 # Shortcuts
