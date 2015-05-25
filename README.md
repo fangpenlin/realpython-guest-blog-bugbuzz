@@ -61,9 +61,18 @@ then run it
 python example.py
 ```
 
-and here you go, it should opens the debugger page on browser for you.
+and here you go, it should opens the debugger page on browser for you. If you are debuggin on a server, it might not be able to open the URL for you, as it will display the URL in stderr like this
+
+```
+Access Key: <ACCESS KEY>
+Dashboard URL: http://dashboard.bugbuzz.io/#/sessions/SEY76Jq2hxgPFPNeA9BLmqqV?access_key=<ACCESS KEY>
+```
+
+You can copy it and paste on your browser.
 
 # Shortcuts
+
+
 
 # Security concern
 
