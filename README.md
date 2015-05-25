@@ -19,7 +19,7 @@ It's basically enhanced pdb, you have auto-complete, syntax highlight and mutipl
 There are actually more advance tools, like [Pydev](http://pydev.org), it's an IDE for Python based on Eclipse. Other similar IDEs can also provide better debugging experience. Although it's better experience, I still don't like IDE debugger for some reasons
 
  - You need to install IDE and configure to use the debugger
- - You need to add a project to use it
+ - You need to create a project to use it
  - It's hard to do remote debugging, e.g. in a vagrant environment or remote server
 
 I still miss the ability drop one line of code and start debugging. I wondered, well, we are in cloud and big data era, why not make the debugger as a software-as-service? In my dream, I want is to drop a new line, then open the debugger with fancy UI in the browser. I can read the complete source code, click around to see what's going on here. With the idea in my mind, so I spent some time created this pet project called Bugbuzz.
