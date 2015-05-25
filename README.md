@@ -87,4 +87,6 @@ As you can see the debugging is provided as a service, to do that the bugbuzz cl
 
 # The future
 
+As a debugger, bugbuzz can only do very basic things now. Hopefully, I can grow it as my pet project graduately when I have time. In the future, it can be way more powerful but yet very handy to use. 😎
+
 # Alternative solution
