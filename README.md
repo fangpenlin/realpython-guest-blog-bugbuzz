@@ -6,7 +6,7 @@
 
 With Bugbuzz, you just need to install the debugging library, drop one line of code into your codebase, and then you can immediately start debugging your code. That's it! There's no need to setup anything else. The UI is super friendly. You don't have to memorize commands; instead, you simply click buttons to trace through the code, or if you are familiar with VIM, you can also use shortcuts to debug like a pro.
 
-Finally, since it's in the cloud, you can share debugging sessions with your co-workers - you can debug together, seek out help, or explain to them how the program works. It can also be a great learning tool for those new to debugging.
+Moreover, since it's in the cloud, you can share debugging sessions with your co-workers - you can debug together, seek out help, or explain to them how the program works. It can also be a great learning tool for those new to debugging.
 
 ## Yet Another Debugger?
 
