@@ -2,13 +2,11 @@
 
 **Let's look at [Bugbuzz](https://github.com/victorlin/bugbuzz-python), an open source, web-based debugger that provides an easy-to-use debugging experience.**
 
-ADD IMAGE
+![Bugbuzz screenshot](https://cloud.githubusercontent.com/assets/201615/7791039/504bf5ba-024d-11e5-9f19-ec865b1e5b36.png)
 
 With Bugbuzz, you just need to install the debugging library, drop one line of code into your codebase, and then you can immediately start debugging your code. That's it! There's no need to setup anything else. The UI is super friendly. You don't have to memorize commands; instead, you simply click buttons to trace through the code, or if you are familiar with VIM, you can also use shortcuts to debug like a pro.
 
 Finally, since it's in the cloud, you can share debugging sessions with your co-workers - you can debug together, seek out help, or explain to them how the program works. It can also be a great learning tool for those new to debugging.
-
-![Bugbuzz screenshot](https://cloud.githubusercontent.com/assets/201615/7791039/504bf5ba-024d-11e5-9f19-ec865b1e5b36.png)
 
 ## Yet Another Debugger?
 
