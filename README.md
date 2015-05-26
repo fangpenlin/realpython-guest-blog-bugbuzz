@@ -38,8 +38,6 @@ In essence, you lose the simplicity that pdb offers. Setup becomes much more tha
 
 So, since we are in the cloud and big-data era, why is there not a simple debugger that operates as a software-as-service? The goal is to coupled the simplicity of pdb - e.g., having to only add a single line of code and then you're ready to debug - with a fancy UI where you can read the complete source code, and click around to see what's happening in order to debug. 
 
-Enter Bugbuzz.
-
 ## Getting Started
 
 Install the package globally:
