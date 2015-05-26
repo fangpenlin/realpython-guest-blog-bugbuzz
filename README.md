@@ -1,95 +1,112 @@
-Bugbuzz is a web-based debugger. The idea behind it is trying to provide an very easy-to-use debugging experience. Currently it supports Python only. With Bugbuzz, you only need to install the debugging library - [bugbuzz-python](https://github.com/victorlin/bugbuzz-python), drop one line in your code, then you can start debugging, no need to setup anything else. The UI is very friendly, no need to memorize commands, you can click buttons to trace through the code, or if you are familiar with VIM, you can also use shortcuts to debug like a pro. The best part of it is, as it's in the cloud, you can share the debugging session link with your co-workers, you can debug together, seek for help, or explain to them how the program works, it can also be a great tutor tool.
+# Bugbuzz - a web-based python debugger
+
+**Let's look at [Bugbuzz](https://github.com/victorlin/bugbuzz-python), an open source, web-based debugger that provides an easy-to-use debugging experience.**
+
+ADD IMAGE
+
+With Bugbuzz, you just need to install the debugging library, drop one line of code into your codebase, and then you can immediately start debugging your code. That's it! There's no need to setup anything else.cThe UI is super friendly. You don't have to memorize commands; instead, you simply click buttons to trace through the code, or if you are familiar with VIM, you can also use shortcuts to debug like a pro.
+
+Finally, since it's in the cloud, you can share debugging sessions with your co-workers - you can debug together, seek out help, or explain to them how the program works. It can also be a great learning tool for those new to debugging.
 
 ![Bugbuzz screenshot](https://cloud.githubusercontent.com/assets/201615/7791039/504bf5ba-024d-11e5-9f19-ec865b1e5b36.png)
 
-# Why yet another debugger
+## Yet Another Debugger?
 
-The reason I am creating yet another debugger is, I felt most of debugging tools out there are really hard to use. The most common Python debugger people use is the one build-in with Python - [pdb](https://docs.python.org/2/library/pdb.html).
+Let's face it: Most of the debugging tools out there are really hard to use.
+
+The most common Python debugger is [pdb](https://docs.python.org/2/library/pdb.html), which is part of the standard library. 
 
 ![Python build-in debugger - pdb screenshot](https://cloud.githubusercontent.com/assets/201615/7790924/8b0dabe2-024a-11e5-86e4-ae46a07699bb.png)
 
-It works, but I bet most of developers feel painful to use it. For me, I really hate to see only one line of code every single step. When you walk through the code, you don't know what's the next few lines, where the hell am I. You need to constantly type commands to know what's the situation, rather than focus on the problem you're solving. This reminds me kind of ancient game - [MUD](http://en.wikipedia.org/wiki/MUD). I never played one, but I know what it looks like, it's like walking in a dungeon without seeing anything, you need to type command to tell what's infront you, what to do then. Maybe it is really fun in that era, but hey, it's 2015 now, and debugger is a tool for developer not a game, can we have something more advance?
+It gets the job done, but it can be painful at times and it's a struggle for many to learn.
 
-Well, actually there is something better - [ipdb](https://pypi.python.org/pypi/ipdb)
+For starters, as you walk through the code, you see only one line of code at each step. You don't know what the next few lines show or, really, where the hell you're at in the program. You need to constantly type commands to know what's happening, rather than focus on the problem you're solving. 
+
+It's sort of like playing the ancient [MUD](http://en.wikipedia.org/wiki/MUD) game, where the main player walks around the game world without seeing anything. You need to type a command to tell what's in front of you and what action should be performed. Maybe it is really fun in that era, but hey - It's 2015 now. We need a more advanced debugger that's not only easier to learn and use.
+
+Sure, there is [ipdb](https://pypi.python.org/pypi/ipdb)-
 
 ![Another debugger - ipdb](https://cloud.githubusercontent.com/assets/201615/7791008/8406135a-024c-11e5-91be-75673ad5c543.png)
 
-It's basically enhanced pdb, you have auto-complete, syntax highlight and mutiple lines displaying. But still, the way it works is still like pdb. You need to ask for trivial things while you debug.
+-but it's basically an enhanced version of pdb. You get auto-complete, syntax highlighting and multiple lines are displayed. Unfortunately, it still works in much the same way as pdb: You need to ask for trivial, distracting things while you debug, which takes away from the actual debugging experience.
 
-There are actually more advance tools, like [Pydev](http://pydev.org), it's an IDE for Python based on Eclipse. Other similar IDEs can also provide better debugging experience. Although it's better experience, I still don't like IDE debugger for some reasons
+There are more advance tools that come packaged with IDEs, like [Pydev](http://pydev.org), which provide a better debugging experience. However, there are a number of downsides to this approach:
 
- - You need to install IDE and configure to use the debugger
- - You need to create a project to use it
- - It's hard to do remote debugging, e.g. in a vagrant environment or remote server
+ - First and foremost, you need to (possibly) purchase and install the IDE, and then configure to use the debugger
+ - You also need to create a project to use it
+ - It's hard to do remote debugging - e.g., in a vagrant environment or remote server
 
-I still miss the ability to drop one line of code and start debugging. I wondered, well, we are in the cloud and big data era, why not make the debugger as a software-as-service? In my dream, I want is to drop a one line, then open the debugger with fancy UI in the browser. I can read the complete source code, click around to see what's going on here. With the idea in my mind, so I spent some time created this pet project called Bugbuzz.
+In essence, you lose the simplicity that pdb offers. Setup becomes much more than just adding a single line of code to your program, in other words.
 
-# Getting started
+So, since we are in the cloud and big-data era, why is there not a simple debugger that operates as a software-as-service? The goal is to coupled the simplicity of pdb - e.g., having to only add a single line of code and then you're ready to debug - with a fancy UI where you can read the complete source code, and click around to see what's happening in order to debug. 
 
-Bugbuzz is pretty easy to use, all you need to do is to install the library package
+Enter Bugbuzz.
 
-```bash
-pip install bugbuzz
+## Getting Started
+
+Install the package globally:
+
+```sh
+$ pip install bugbuzz
 ```
 
-then drop a line in the python file you want to debug
+And then drop a line in the python file you want to debug, like so:
 
-```
+```python
 import bugbuzz; bugbuzz.set_trace()
 ```
 
-for example, you have a simple python script like this
+Now you're ready to debug!
 
-example.py:
+For example, add the following code to a file called *example.py*:
+
 ```python
 for i in range(10):
     print i
 ```
 
-to debug it, you can drop it at the first line
+To debug it, you can just add `import bugbuzz; bugbuzz.set_trace()` just above the first line of code:
 
-example.py:
 ```python
 import bugbuzz; bugbuzz.set_trace()
 for i in range(10):
     print i
 ```
 
-then run it
+Then run the script:
 
-```
-python example.py
-```
-
-and here you go, it should opens the debugger page in browser for you. If you are debugging on a server, it might not be able to open the URL for you, however, as it will display the URL in stderr like this
-
-```
-Access Key: <ACCESS KEY>
-Dashboard URL: http://dashboard.bugbuzz.io/#/sessions/SEY76Jq2hxgPFPNeA9BLmqqV?access_key=<ACCESS KEY>
+```sh
+$ python example.py
 ```
 
-You can copy the URL and paste on your browser.
+And there you go. This should open the debugger in the browser for you.
 
-# Shortcuts
+> **NOTE** If you are debugging on a remote server, it might not be able to open the URL for you, however, you will see the URL in `stderr`:
 
-If you are familiar with VIM shortcuts, then it won't be too difficult for you to pick up Bugbuzz shortcuts.
+>    ```sh
+    Access Key: <ACCESS KEY>
+    Dashboard URL: http://dashboard.bugbuzz.io/#/sessions/SEY76Jq2hxgPFPNeA9BLmqqV?access_key=<ACCESS KEY>
+    ```
 
- - C Continue
- - H Return
- - J Next
- - L Step
+> Just copy the URL and paste into your local browser.
 
-As you can think it's like browsing code, J is down, so it's next line, and L is right, so you are step into a funtion call. H is left, so you are leaving a function call, so that would be run until returning current function call.
+## Shortcuts
 
-# Security concern
+If you' re familiar with VIM shortcuts, then it won't be too difficult for you to pick up the Bugbuzz [shortcuts](ADD LINK).
 
-As you can see the debugging is provided as a service, to do that the bugbuzz client library needs to upload all source code and local variables needed to the server. I know you may have concern about this, but no worries, all your source code and varialbes will be encrypted before uploaded to the server. Only with the access key can decrypt it. And the access key is generated by the client library and it will be brought to browser by URL in the hash part, so the server cannot know your source code and variables without knowing the access key.
+ - *C*: Continue
+ - *H*: Return
+ - *J*: Next
+ - *L*: Step
 
-# Alternative solution
+As you can tell it's like browsing code- J is down, so it's next line, and L is right, allowing you to step into a function call. H is left, so you leave a function call.
 
-There is an open source project pretty similar to Bugbuzz, it's [wdb](https://github.com/Kozea/wdb).
+## Security concern
 
-# The future
+As you can tell, since the debugging is provided as a service, the Bugbuzz client library uploads all source code and local variables needed to the server. Don't worry: The source code is encrypted before it's uploaded to the server, and you must have the access key to decrypt it.
 
-As a prototype, Bugbuzz can only do very basic things now, yet it shows a very promising start. Hopefully, I can grow it as my pet project graduately when I have time. Feel free to let me know if you have any throught about it. In the future, it can be way more powerful but yet very handy to use. 😎
+## The future
 
+As a prototype, Bugbuzz can only do very basic things for now, yet it shows a very promising start. Feel free to let me know if you have any feedback of if you'd like to contribute! 
+
+Cheers!
