@@ -97,6 +97,14 @@ If you' re familiar with VIM shortcuts, then it won't be too difficult for you t
 
 As you can tell it's like browsing code- J is down, so it's next line, and L is right, allowing you to step into a function call. H is left, so you leave a function call.
 
+## Collaborative debugging
+
+The best part of Bugbuz is - collaborative debugging is so easy with it. Say you encountered a very tricky bug, appears in a module written by your co-worker, to debug together with your co-worker, you can insert `bugbuzz.set_trace()` in your code, then step into your co-worker's module, then you can copy the shareable link at the right top of the dashboard page and send it to him.
+
+![Sharable Bugbuzz link](https://cloud.githubusercontent.com/assets/201615/7804487/aade511e-0318-11e5-8b90-bdb610eacd92.png)
+
+By visiting the session URL with access key, your co-worker can see your debugging steps in real-time. He can also control the debugging session to help you.
+
 ## Security concern
 
 As you can tell, since the debugging is provided as a service, the Bugbuzz client library uploads all source code and local variables needed to the server. Don't worry: The source code is encrypted before it's uploaded to the server, and you must have the access key to decrypt it.
