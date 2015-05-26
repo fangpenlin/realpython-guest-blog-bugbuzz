@@ -1,6 +1,6 @@
 # Bugbuzz - a web-based python debugger
 
-**Let's look at [Bugbuzz](https://github.com/victorlin/bugbuzz-python), an open source, web-based debugger that provides an easy-to-use debugging experience.**
+**Let's look at [Bugbuzz](https://github.com/victorlin/bugbuzz-python), a web-based debugger that provides an easy-to-use debugging experience.**
 
 ![Bugbuzz screenshot](https://cloud.githubusercontent.com/assets/201615/7791039/504bf5ba-024d-11e5-9f19-ec865b1e5b36.png)
 
