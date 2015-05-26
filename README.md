@@ -99,7 +99,7 @@ As you can tell it's like browsing code- J is down, so it's next line, and L is 
 
 ## Collaborative debugging
 
-The best part of Bugbuz is - collaborative debugging is so easy with it. Say you encountered a very tricky bug, appears in a module written by your co-worker, to debug together with your co-worker, you can insert `bugbuzz.set_trace()` in your code, then step into your co-worker's module, then you can copy the shareable link at the right top of the dashboard page and send it to him.
+The best part of Bugbuz is - collaborative debugging is so easy. Say you encountered a very tricky bug, appears in a module written by your co-worker, to debug together with your co-worker, you can insert `bugbuzz.set_trace()` in your code, then step into your co-worker's module, then you can copy the shareable link at the right top of the dashboard page and send it to him.
 
 ![Sharable Bugbuzz link](https://cloud.githubusercontent.com/assets/201615/7804487/aade511e-0318-11e5-8b90-bdb610eacd92.png)
 
