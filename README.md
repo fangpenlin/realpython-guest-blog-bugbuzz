@@ -108,6 +108,7 @@ By visiting the session URL with access key, your co-worker can see your debuggi
 ## Security concern
 
 As you can tell, since the debugging is provided as a service, the Bugbuzz client library uploads all source code and local variables needed to the server. But don't worry, the source code is encrypted before it's uploaded to the server, and you must have the access key to decrypt it. Without access key, none of your source code and variable values are visible, even from the server's perspective.
+
 ## The future
 
 As a prototype, Bugbuzz can only do very basic things for now, yet it shows a very promising start. Feel free to let me know if you have any feedback. 
