@@ -103,12 +103,11 @@ The best part of Bugbuz is - collaborative debugging is so easy. Say you encount
 
 ![Sharable Bugbuzz link](https://cloud.githubusercontent.com/assets/201615/7804487/aade511e-0318-11e5-8b90-bdb610eacd92.png)
 
-By visiting the session URL with access key, your co-worker can see your debugging steps in real-time. He can also control the debugging session to help you.
+By visiting the session URL with access key, your co-worker can see your debugging steps in real-time. He/She can also control the debugging session to help you.
 
 ## Security concern
 
-As you can tell, since the debugging is provided as a service, the Bugbuzz client library uploads all source code and local variables needed to the server. Don't worry: The source code is encrypted before it's uploaded to the server, and you must have the access key to decrypt it.
-
+As you can tell, since the debugging is provided as a service, the Bugbuzz client library uploads all source code and local variables needed to the server. But don't worry, the source code is encrypted before it's uploaded to the server, and you must have the access key to decrypt it. Without access key, none of your source code and variable values are visible, even from the server's perspective.
 ## The future
 
 As a prototype, Bugbuzz can only do very basic things for now, yet it shows a very promising start. Feel free to let me know if you have any feedback. 
