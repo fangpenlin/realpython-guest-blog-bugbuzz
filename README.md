@@ -111,6 +111,4 @@ As you can tell, since the debugging is provided as a service, the Bugbuzz clien
 
 ## The future
 
-As a prototype, Bugbuzz can only do very basic things for now, yet it shows a very promising start. Feel free to let me know if you have any feedback of if you'd like to contribute! 
-
-Cheers!
+As a prototype, Bugbuzz can only do very basic things for now, yet it shows a very promising start. Feel free to let me know if you have any feedback. 
